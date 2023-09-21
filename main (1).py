@@ -1,6 +1,12 @@
-# Write a program that determines whether a year entered by the user is a leap year or not using ifelif-else statements.
-year = int(input("Enter a year: "))
-if (year % 4 == 0 and year % 100 != 0)or year%400==0:
-  print(year, "is a leap year")
-else:
-  print(year, "is not a leap year")
+#
+def linear_search_product(product_list, target_product):
+    indices = []
+    for i, product in enumerate(product_list):
+        if product == target_product:
+            indices.append(i)
+    return indices
+
+products = ["Apple", "Banana", "Apple", "Orange", "Pear", "Apple"]
+target = "Apple"
+result = linear_search_product(products, target)
+print(result)
